@@ -2,7 +2,7 @@
 import React,{useState} from 'react';
 import AngryButton from './components/AngryButton';
 import CounterButton from './components/CounterButton';
-import LightSwithchButton from './components/LightSwitchButton';
+import LightSwitchButton from './components/LightSwitchButton';
 import './App.css';
 import TextRepeaterButton from './components/TextRepeaterButton';
 
@@ -19,11 +19,13 @@ function App() {
       <section>
       <AngryButton/>
       <CounterButton/>
-      <LightSwithchButton light={light} setLight={setLight}/>
+      <LightSwitchButton light={light} switchLight={switchLight}/>
       <TextRepeaterButton/>
 </section>
     </div>
   );
  
 }
+
+
 export default App;
